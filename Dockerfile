@@ -12,4 +12,4 @@ COPY files/supervisord.conf /etc/
 EXPOSE 8080/tcp 22/tcp
 VOLUME /var/www
 
-ENTRYPOINT ["http-server-spa /var/www/ index.html"]
+ENTRYPOINT ["http-server-spa", "/var/www/", "index.html"]
